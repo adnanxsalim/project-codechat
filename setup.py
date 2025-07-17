@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="codechat",
-    version="0.1.0",
+    version="1.0.0",
     description="AI CLI to analyze and refactor codebases",
     author="Adnan Salim",
     author_email="hello@adnansal.im",
