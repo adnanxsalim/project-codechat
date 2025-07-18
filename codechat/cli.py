@@ -6,7 +6,7 @@ from codechat.llm_client import analyze_code
 def main():
     parser = argparse.ArgumentParser(
         prog="codechat",
-        description="🤖 CodeChat: Ask questions about your codebase using AI",
+        description="🤖 CodeChat: Ask AI about your codebase",
         epilog="Example: codechat /path/to/codebase -q 'What does this code do?'",
         formatter_class=argparse.RawTextHelpFormatter,
         usage="%(prog)s path -q [question]",
@@ -31,11 +31,11 @@ def main():
         # Interactive chat mode
         print("\n💬 Interactive mode. Type 'exit' or 'quit' to leave.")
         while True:
-            question = input("\n❓ Ask about the code: ").strip()
+            question = input("\n❓ You > ").strip()
             if question.lower() in ("exit", "quit"):
                 print("👋 Goodbye!")
                 break
             if not question:
                 continue
             result = analyze_code(code, question)
-            print(f"\n💬 Answer:\n{result}")
+            print(f"\n💬 Answer >\n{result}")
