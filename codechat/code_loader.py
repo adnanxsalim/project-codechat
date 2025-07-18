@@ -2,7 +2,7 @@ import os
 
 def load_codebase(path, file_extensions=None, max_file_size_kb=100):
     if file_extensions is None:
-        file_extensions = [".py", ".js", ".ts", ".java", ".html", ".css", ".json"]
+        file_extensions = [".py", ".js", ".ts", ".jsx", ".tsx", ".wasp", ".c", ".mjs", ".java", ".html", ".css", ".json"]
 
     code_files = []
     for root, _, files in os.walk(path):
