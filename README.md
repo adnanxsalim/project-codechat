@@ -96,8 +96,8 @@ To contribute or modify:
 
 ## License
 
-MIT License © Adnan Salim
+[MIT License © Adnan Salim](https://github.com/adnanxsalim/project-codechat/blob/main/LICENSE)
 
 ## Contact
 
-For questions or feedback, reach out to Adnan Salim at [hello@adnansal.im](mailto:hello@adnansal.im)
+For questions or feedback, reach out to Adnan Salim at [hello@adnansal.im](mailto:hello@adnansal.im?subject=codechat)
