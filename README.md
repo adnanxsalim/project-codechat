@@ -72,9 +72,13 @@ Type your questions and get answers. Type `exit` or `quit` to leave.
 
 By default, **codechat** loads files with these extensions:
 
-`.py`, `.js`, `.ts`, `.jsx`, `.tsx`, `.wasp`, `.c`, `.mjs`, `.java`, `.html`, `.css`, `.json`, `.md`, `.txt`, `.csv`
+`.py`, `.js`, `.ts`, `.jsx`, `.tsx`, `.wasp`, `.c`, `.mjs`, `.java`, `.html`, `.css`, `.json`, `.md`, `.txt`, `.csv`, `.yml`, `.yaml`, `.xml`, `.sh`, `.bash`, `.php`
 
 To add more extensions, go to `codechat/code_loader.py` and add the file extensions you want.
+
+**codechat** also omits directories such as `node_modules`, `venv`, `__pycache__`, `.git`, `.svn`, `.hg`, `.idea`, `.vscode`
+
+To omit any more directories, go to `codechat/code_loader.py` and change `exclude_dirs` as you want.
 
 Files larger than 100 KB are skipped to keep responses manageable.
 
